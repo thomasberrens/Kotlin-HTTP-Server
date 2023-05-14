@@ -74,6 +74,7 @@ class JsonSerializer {
         return property.values.first()
     }
 
+    // TODO: add support for arrays
     fun decodeFromString(propertyType: KType, stringifiedProperty: String): Any {
         if (propertyType.classifier is KClass<*>) {
 
